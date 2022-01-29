@@ -12,6 +12,7 @@ jobs:
         uses: ./.github/actions/grammar
       - name: "Git push"
         run : |
+          echo "placeholder" >> dist/placeholder.txt
           git config --global user.name 'Github Actions Bot'
           git config --global user.email '<>'
           git add .
