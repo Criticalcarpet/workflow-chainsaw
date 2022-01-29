@@ -7,6 +7,7 @@ try {
         return x.slice(0, 1)
     })
     const flat = [].concat(...unique);
+    console.log(flat)
     for (let i = 0; i < flat.length; i++) {
        fs.writeFileSync(`dist/${flat[i]}`, '', 'utf8');
        console.log(`done : ${flat[i]}`)
