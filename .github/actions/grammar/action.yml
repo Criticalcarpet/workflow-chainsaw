@@ -1,0 +1,7 @@
+name: "Write to GitHub"
+
+description: "Get the details of a GitHub repository and write them to a file."
+
+runs:
+  using: "node14"
+  main: "index.js"

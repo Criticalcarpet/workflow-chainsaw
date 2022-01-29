@@ -1,0 +1,19 @@
+name: "JS Actions"
+
+on: [push]
+
+jobs:
+  action:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "grammar-action"
+        uses: ./.github/actions/grammar
+      - name: "Git push"
+        run : |
+          git config --global user.name 'Github Actions Bot'
+          git config --global user.email '<>'
+          git add .
+          git commit -m "Done"
+          git push origin main
