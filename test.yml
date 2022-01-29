@@ -1,0 +1,8 @@
+vendor/grammars/TypeScript-TmLanguage:
+- source.ts
+- source.tsx
+- text.error-list
+- text.find-refs
+something-else:
+- source.js
+- gg.jsx
